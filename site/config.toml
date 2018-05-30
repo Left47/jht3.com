@@ -1,9 +1,68 @@
-baseurl = "/"
-languageCode = "en-us"
-languageLang = "en"
-title = "My new Victor-Hugo site"
+## Basic Configuration
 
-# RSS, categories and tags disabled for an easy start
-# See configuration options for more details: 
-# https://gohugo.io/getting-started/configuration/#toml-configuration
-disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
+baseurl = "http://localhost:3000"
+builddrafts = false
+canonifyurls = false
+languageCode = "en-US"
+
+contentdir = "content"
+layoutdir = "layouts"
+publishdir = "public"
+
+author = "Jim Thomas"
+title = "Jim Thomas"
+
+theme = "hugo-goa"
+
+## Hugo Built-in Features
+# disqusShortname = "https-shenoybr-github-io-hugo-goa-demo" # Comment out to disable Disqus.
+# googleAnalytics = "XYZ"
+# enableRobotsTXT = true
+
+## Site Settings
+[params]
+author = "Jim Thomas"
+intro = "Product Guy"
+description = "Web Developer, Entrepreneur, MBA, Technology Enthusiast, Sinistral, Happy Wanderer"
+authorimage = "headshot.jpg"
+dateformat = "Jan 2, 2006"
+
+## Site Meta Settings
+[params.meta]
+# description = "Simple minimalist theme"
+# keywords = "minimalist,blog,goa,hugo,developer"
+
+## Social Accounts
+[params.social]
+github = "left47"
+# instagram = "<username>"
+# xing = "<username>"
+linkedin = "jamesthomas3"
+twitter = "left47"
+# facebook = "left47"
+# google = "<username>"
+stackoverflow = "left47"
+email = "james.thomas@aya.yale.edu"
+
+## Extras
+[params.extra]
+# copyright = "© 2018. James Thomas."
+# poweredby = true
+# highlightjs = true
+
+## Main Menu
+[[menu.main]]
+#     name = "blog"
+#     weight = 100
+#     identifier = "blog"
+#     url = "/blog/"
+# [[menu.main]]
+#     name = "about"
+#     identifier = "about"
+#     weight = 200
+#     url = "/about/"
+# [[menu.main]]
+#     name = "coderag"
+#     identifier = "coderag"
+#     weight = 300
+#     url = "/coderag/"
